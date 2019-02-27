@@ -38,6 +38,11 @@ namespace Lucene.Net.LukeNet
 			{
 				textPath.Items.Add(path);
 			}
+
+            if(textPath.Items.Count > 0)
+            {
+                textPath.SelectedIndex = 0;
+            }
 		}
 
 		/// <summary>
@@ -93,6 +98,8 @@ namespace Lucene.Net.LukeNet
             // 
             // checkRO
             // 
+            this.checkRO.Checked = true;
+            this.checkRO.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkRO.Location = new System.Drawing.Point(8, 40);
             this.checkRO.Name = "checkRO";
             this.checkRO.Size = new System.Drawing.Size(192, 24);
