@@ -673,7 +673,7 @@ namespace Lucene.Net.LukeNet
             this.listFields.Location = new System.Drawing.Point(8, 184);
             this.listFields.MultiSelect = false;
             this.listFields.Name = "listFields";
-            this.listFields.Size = new System.Drawing.Size(168, 259);
+            this.listFields.Size = new System.Drawing.Size(343, 259);
             this.listFields.TabIndex = 14;
             this.listFields.UseCompatibleStateImageBehavior = false;
             this.listFields.View = System.Windows.Forms.View.Details;
@@ -696,10 +696,10 @@ namespace Lucene.Net.LukeNet
             this.listTerms.ContextMenu = this.contextMenu;
             this.listTerms.FullRowSelect = true;
             this.listTerms.GridLines = true;
-            this.listTerms.Location = new System.Drawing.Point(182, 184);
+            this.listTerms.Location = new System.Drawing.Point(357, 184);
             this.listTerms.MultiSelect = false;
             this.listTerms.Name = "listTerms";
-            this.listTerms.Size = new System.Drawing.Size(562, 317);
+            this.listTerms.Size = new System.Drawing.Size(387, 317);
             this.listTerms.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listTerms.TabIndex = 19;
             this.listTerms.UseCompatibleStateImageBehavior = false;
@@ -1379,17 +1379,18 @@ namespace Lucene.Net.LukeNet
             // 
             this.textParsed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textParsed.Location = new System.Drawing.Point(320, 97);
+            this.textParsed.Location = new System.Drawing.Point(382, 97);
             this.textParsed.Multiline = true;
             this.textParsed.Name = "textParsed";
-            this.textParsed.Size = new System.Drawing.Size(400, 64);
+            this.textParsed.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textParsed.Size = new System.Drawing.Size(338, 64);
             this.textParsed.TabIndex = 7;
             this.textParsed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textParsed_KeyPress);
             // 
             // labelParsedQuery
             // 
             this.labelParsedQuery.AutoSize = true;
-            this.labelParsedQuery.Location = new System.Drawing.Point(320, 81);
+            this.labelParsedQuery.Location = new System.Drawing.Point(379, 81);
             this.labelParsedQuery.Name = "labelParsedQuery";
             this.labelParsedQuery.Size = new System.Drawing.Size(97, 13);
             this.labelParsedQuery.TabIndex = 6;
@@ -1449,14 +1450,15 @@ namespace Lucene.Net.LukeNet
             this.textSearch.Location = new System.Drawing.Point(16, 97);
             this.textSearch.Multiline = true;
             this.textSearch.Name = "textSearch";
-            this.textSearch.Size = new System.Drawing.Size(288, 64);
+            this.textSearch.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textSearch.Size = new System.Drawing.Size(360, 64);
             this.textSearch.TabIndex = 5;
             this.textSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textSearch_KeyDown);
             // 
             // labelSearchExpr
             // 
             this.labelSearchExpr.AutoSize = true;
-            this.labelSearchExpr.Location = new System.Drawing.Point(16, 81);
+            this.labelSearchExpr.Location = new System.Drawing.Point(13, 81);
             this.labelSearchExpr.Name = "labelSearchExpr";
             this.labelSearchExpr.Size = new System.Drawing.Size(97, 13);
             this.labelSearchExpr.TabIndex = 4;
