@@ -2583,7 +2583,9 @@ namespace Lucene.Net.LukeNet
             analyzers.Keys.CopyTo(aNames, 0);
             cbAnalyzers.Items.AddRange(aNames);
             cbAnalyzers.EndUpdate();
-            cbAnalyzers.SelectedIndex = 0;
+
+            var analyzerName = "Lucene.Net.Analysis.Standard.StandardAnalyzer";
+            comboAnalyzer.SelectedItem = analyzerName;
         }
 
         public IDictionary GetAnalyzers()
@@ -3184,8 +3186,8 @@ namespace Lucene.Net.LukeNet
                 defField = indexFields[0];
                 comboFields.SelectedItem = analyzerName;
             }
-
-            return new QueryParser(Util.Version.LUCENE_30, defField, analyzer);
+            //new PerFieldQueryParserWrapper(IndexingServiceSettings.LuceneVersion, "EPISERVER_SEARCH_DEFAULT", IndexingServiceSettings.Analyzer, IndexingServiceSettings.LowercaseFields)
+            return new QueryParser(Util.Version.LUCENE_29, defField, analyzer);
         }
         #endregion Private Methods
 
